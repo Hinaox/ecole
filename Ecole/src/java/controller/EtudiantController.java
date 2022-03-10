@@ -55,8 +55,14 @@ public class EtudiantController extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
         if(request.getParameter("add")!=null){
-            Etudiant e=;
-            
+            Etudiant e=(Etudiant)request.getAttribute("addEtudiant");
+            try {
+                e.insert(new Connexion().connect());
+            } catch (Exception ex) {
+                Logger.getLogger(EtudiantController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+             RequestDispatcher dispat = request.getRequestDispatcher("vue/template.jsp?vue=page");
+            dispat.forward(request,response); 
         }
          if(request.getParameter("delete")!=null){
              String id=request.getParameter("idEtudiant");
@@ -71,7 +77,14 @@ public class EtudiantController extends HttpServlet {
             dispat.forward(request,response); 
         }
          if(request.getParameter("update")!=null){
-            
+            Etudiant e=(Etudiant)request.getAttribute("updateEtudiant");
+            try {
+                e.update(new Connexion().connect());
+            } catch (Exception ex) {
+                Logger.getLogger(EtudiantController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+             RequestDispatcher dispat = request.getRequestDispatcher("vue/template.jsp?vue=page");
+            dispat.forward(request,response); 
         }
          if(request.getParameter("find")!=null){
             Etudiant e=new Etudiant();
