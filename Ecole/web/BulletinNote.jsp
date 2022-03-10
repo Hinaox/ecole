@@ -1,20 +1,8 @@
-<%-- 
-    Document   : BulletinNote
-    Created on : 10 mars 2022, 10:05:41
-    Author     : cleme
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Bulletin Note</title>
-    </head>
-    <body>
-    <center>
+<%@ include file="Template.jsp" %>
+<div id="content">    
+<center>
         <h1>Bulletin Note</h1>
-        <p>Classe(annÃ©e scolaire): S5(2021-2022)</p>
+        <p>Classe(année scolaire): S5(2021-2022)</p>
         <table border="1" width="700">
             <tr>
                 <th>Examen\Matiere(coeff)</th>
@@ -51,7 +39,7 @@
         </table>
         </br>
         </br>
-        <p>Classe(annÃ©e scolaire): S3(2020-2021)</p>
+        <p>Classe(année scolaire): S3(2020-2021)</p>
         <table border="1" width="700">
             <tr>
                 <th>Examen\Matiere(coeff)</th>
@@ -87,5 +75,4 @@
             </tr>
         </table>
     </center>
-    </body>
-</html>
+</div>

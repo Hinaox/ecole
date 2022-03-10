@@ -1,18 +1,6 @@
-<%-- 
-    Document   : ListeEtudiant
-    Created on : 10 mars 2022, 08:47:09
-    Author     : cleme
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Liste etudiant</title>
-    </head>
-    <body>
-    <center>
+<%@ include file="Template.jsp" %>
+<div id="content">
+<center>
         <h1>Liste etudiant</h1>
         <table border="1" width="500">
             <tr>
@@ -20,7 +8,7 @@
                 <th>Nom</th>*
                 <th>Prenom</th>
                 <th>Age</th>
-                <th>Classe(annÃ©e scolaire)</th>
+                <th>Classe(année scolaire)</th>
                 <th>Ecolage</th>
                 <th>Moyenne</th>
                 <th></th>
@@ -47,5 +35,4 @@
             </tr>
         </table>
     </center>
-    </body>
-</html>
+</div>

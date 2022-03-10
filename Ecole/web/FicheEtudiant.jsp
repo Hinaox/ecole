@@ -1,18 +1,6 @@
-<%-- 
-    Document   : FicheEtudiant
-    Created on : 10 mars 2022, 09:09:39
-    Author     : cleme
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Fiche Etudiant</title>
-    </head>
-    <body>
-    <center>
+<%@ include file="Template.jsp" %>
+<div id="content">
+<center>
         <h1>Fiche de Rakoto Jean</h1>
                 <p>Identifiant: E0124</p>
                 <p>Nom: Rabekoto</p>
@@ -25,5 +13,4 @@
                 <p><button>Historique de paiement d'ecolage</button></p>
                 <p><button>Voir bulletin de note</button></p>
     </center>
-    </body>
-</html>
+</div>

@@ -1,20 +1,8 @@
-<%-- 
-    Document   : HistoriqueEcolage
-    Created on : 10 mars 2022, 09:27:28
-    Author     : cleme
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Historique paiement</title>
-    </head>
-    <body>
-    <center>
+<%@ include file="Template.jsp" %>
+<div id="content">
+<center>
         <h1>Historique paiement ecolage</h1>
-        <p>Classe(annÃ©e scolaire): S5(2021-2022)</p>
+        <p>Classe(année scolaire): S5(2021-2022)</p>
         <p>date limite de paiement: 01/05/2022</p>
         <table border="1" width="700">
             <tr>
@@ -23,7 +11,7 @@
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Montant</th>
-                <th>PayÃ©</th>
+                <th>Payé</th>
                 <th>Reste</th> 
             </tr>
             <tr>
@@ -66,7 +54,7 @@
         </br>
         </br>
         </br>
-        <p>Classe(annÃ©e scolaire): S3(2020-2021)</p>
+        <p>Classe(année scolaire): S3(2020-2021)</p>
         <table border="1" width="700">
             <tr>
                 <th>Date\Classe</th>
@@ -74,7 +62,7 @@
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Montant</th>
-                <th>PayÃ©</th>
+                <th>Payé</th>
                 <th>Reste</th> 
             </tr>
             <tr>
@@ -116,5 +104,4 @@
             
         </table>
     </center> 
-    </body>
-</html>
+</div>
